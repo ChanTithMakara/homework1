@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Create calculate using Js</title>
+</head>
+
+<body>
+    <!-- sum two number -->
+    <div class="box">
+        <p>Calculator sum two number</p>
+        <input type="number" id="Num1"> +
+        <input type="number" id="Num2">
+        <button onclick="cal()">Show Result</button>
+        <p id="result"></p>
+    </div>
+    <script>
+        function cal() {
+            let num1 = document.getElementById('Num1').value;
+            let num2 = document.getElementById('Num2').value;
+            let a = Number(num1);
+            let b = Number(num2);
+            let c = a + b;
+            document.getElementById('result').innerText = 'Result ' + 'is: ' + c;
+            console.log(typeof(Number(c)));
+        }
+    </script>
+</body>
+</html>
